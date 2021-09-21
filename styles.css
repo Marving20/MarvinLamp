@@ -172,7 +172,7 @@ button span{
     border-radius: 50%;
     width: 26px;
     height: 26px;
-    background: #333;
+    background: #fff;
     transition: background 0.5s, margin-left 0.5s;
 }
 .active{
