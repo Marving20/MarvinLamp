@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="contin">
+            <img src="/img/1826223_brand_github_logo_network_social_icon.svg" class="logo">
+        <div class="goku">
+            <button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+        </div>
+            
+        </div>
+        <div class="container">
+            <div class="textos">
+                <h1>Marvin Galeano</h1>
+                <h2>Fronted Developer | Student - Junior <br>
+                choose hope or despair <br> but see for yourself</h2>
+                <a href="https://www.facebook.com/marvin.galeano.14203/">Contact Me</a>
+        </div>
+        <div class="imgenes">
+            <img src="/img/lamp.png" class="lamp">
+            <img src="/img/light.png" class="light" id="light">
+        </div>
+        
+        
+        </div>
+        
+    </header>
+    <script>
+        var btn = document.getElementById("btn")
+        var light = document.getElementById("light")
+
+        function togglebtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+    </script>
+</body>
+</html>

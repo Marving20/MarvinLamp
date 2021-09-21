@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+html,body{
+    
+    background-size: cover;
+    min-height: 900px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/img/maxresdefault\ \(5\).jpg);
+}
+.container{
+
+    width: 95%;
+    max-width: 1200px;
+    justify-content: space-around;
+    display: flex;
+    margin: auto;
+    align-items: center;
+
+}
+header{
+    padding: 48px;
+    height: auto;
+
+}
+.lamp{
+margin-top: 50px;
+    display: inline-block;
+    object-fit: cover;
+    height: 344px;
+}
+.light{
+    opacity: 0;
+    transition: opacity 0.4;
+    margin-left: -33px;
+    margin-top: 0px;
+    display: inline-block;
+    object-fit: cover;
+    height: 144px;
+}
+.textos{
+    
+    margin-top: 74px;
+    width: 100%;
+}
+.textos h1{
+    font-size: 80px;
+    color: #fff;
+}
+.textos h2{
+    color: #fff;
+    font-size: 30px;
+}
+.textos a{
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 9px;
+}
+@media screen and (max-width:1000px) {
+    .lamp{
+        height: 244px;
+    }
+    .light{
+        height: 110px;
+    }
+    
+    
+}
+@media screen and (max-width:800px) {
+    .lamp{
+        height: 244px;
+    }
+    .textos h1{
+        font-size: 70px;
+    }
+    .textos h2{
+        font-size: 25px;
+    }
+    body{
+    background-image: url(/img/maxresdefault\ \(5\).jpg);
+    }
+}
+@media screen and (max-width:700px) {
+    .lamp{
+        height: 224px;
+    }
+    .textos h1{
+        font-size: 40px;
+    }
+    .textos h2{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .container{
+        width: 100%;
+        text-align: center;
+        flex-wrap: wrap-reverse;
+        
+    }
+    .light{
+    margin-left: -6px;
+        display: flex;
+    }
+    
+   
+    
+    .textos{
+        text-align: center;
+        width: 100%;
+    }
+    .textos h1{
+        font-size: 55px;
+    }
+    
+}
+@media screen and (max-width:340px) {
+    .lamp{
+        height: 164px;
+    }
+    .light{
+        height: 110px;
+    }
+    .textos h1{
+        font-size: 35px;
+    }
+    .textos h2{
+        font-size: 15px;
+    }
+    .textos a{
+        width: 120px;
+    }
+    
+}
+.logo{
+    animation:  float 6s ease-in-out infinite;
+    color: #fff;
+    position: absolute;
+    margin-left: -25px;
+    height: 43px;
+}
+.logo:hover{
+    border-bottom: 2px solid #fff;
+}
+button{
+    
+   margin-top: 9px;
+    cursor: pointer;
+    margin-left: 158px;
+    height: 30px;
+    width: 60px;
+    border-radius: 40px;
+    border: 0;
+    outline: 0;
+transition:  background 0.5s;
+}
+button span{
+    margin-left: 2px;
+    display: block;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    background: #333;
+    transition: background 0.5s, margin-left 0.5s;
+}
+.active{
+    background: rgb(53, 139, 173);
+}
+.active span{
+    color: #fff;
+    margin-left: 26px;
+
+}
+.on{
+    opacity: 1;
+}
+@keyframes float{
+    0%{
+        box-shadow: 0px 5px 15px 0px rgba(0 , 0, 0, 0,6);
+        transform: translateY(0px); 
+    }
+    50%{
+        box-shadow: 0px 15px 25px 0px rgba(0 , 0, 0, 0,2);
+        transform: translateY(-20px); 
+    }
+    100%{
+        box-shadow: 0px 15px 25px 0px rgba(0 , 0, 0, 0,6);
+        transform: translateY(0px); 
+    }
+}
